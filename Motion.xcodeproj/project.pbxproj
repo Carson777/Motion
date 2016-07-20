@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4332EAB71D37FFD20008DFFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332EAB61D37FFD20008DFFD /* AppDelegate.swift */; };
-		4332EAB91D37FFD20008DFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332EAB81D37FFD20008DFFD /* ViewController.swift */; };
+		4332EAB91D37FFD20008DFFD /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332EAB81D37FFD20008DFFD /* CoreMotionViewController.swift */; };
 		4332EABC1D37FFD20008DFFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4332EABA1D37FFD20008DFFD /* Main.storyboard */; };
 		4332EABE1D37FFD20008DFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4332EABD1D37FFD20008DFFD /* Assets.xcassets */; };
 		4332EAC11D37FFD20008DFFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4332EABF1D37FFD20008DFFD /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		4332EAB31D37FFD20008DFFD /* Motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4332EAB61D37FFD20008DFFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4332EAB81D37FFD20008DFFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4332EAB81D37FFD20008DFFD /* CoreMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
 		4332EABB1D37FFD20008DFFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4332EABD1D37FFD20008DFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4332EAC01D37FFD20008DFFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				4332EAB61D37FFD20008DFFD /* AppDelegate.swift */,
-				4332EAB81D37FFD20008DFFD /* ViewController.swift */,
+				4332EAB81D37FFD20008DFFD /* CoreMotionViewController.swift */,
 				4332EABA1D37FFD20008DFFD /* Main.storyboard */,
 				4332EABD1D37FFD20008DFFD /* Assets.xcassets */,
 				4332EABF1D37FFD20008DFFD /* LaunchScreen.storyboard */,
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					4332EAB21D37FFD20008DFFD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 28MK7H5SR4;
 					};
 				};
 			};
@@ -135,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4332EAB91D37FFD20008DFFD /* ViewController.swift in Sources */,
+				4332EAB91D37FFD20008DFFD /* CoreMotionViewController.swift in Sources */,
 				4332EAB71D37FFD20008DFFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +252,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Motion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orgID.Motion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +266,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Motion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orgID.Motion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -288,6 +295,7 @@
 				4332EAC71D37FFD20008DFFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
